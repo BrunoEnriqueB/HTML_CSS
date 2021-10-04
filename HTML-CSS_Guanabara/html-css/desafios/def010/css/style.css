@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FontePrincipal';
+    src: url('../images/Dharma\ Type\ -\ Bebas\ Neue\ Regular.otf');
+}
+
+@font-face {
+    font-family: 'FonteTítulos';
+    src: url(../images/idroid.otf);
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding-left: 2em;
+    height: 50%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+ul li {
+    list-style-image: url('../images/certinho.png');
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+    text-indent: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1),  var(--cor2), var(--cor3), var(--cor4), var(--cor5));
+    padding: 5px;
+    height: 200px;
+}
+
+header > h1 {
+    color: #fff;
+    font-family: 'FontePrincipal';
+    text-align: center;
+    padding-top: 61px;
+}
+
+header > p {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 0px;
+    height: 38px;
+}
+
+header > nav {
+    padding-top: 10px;
+}
+
+header > nav > a {
+    color: #fff;
+    padding: 5px;
+}
+
+header > nav > a:hover {
+    background-color: var(--cor3);
+    color: black;
+    border-radius: 3px;
+}
+
+main {
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.364);
+    margin-bottom: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+main h1, 
+main h2 {
+    font-family: 'FonteTítulos', cursive;
+}
+
+.title1 {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0), #fff);
+    padding: 3px;
+}
+
+.foto {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.embed iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+aside {
+    margin-top: 20px;
+    background-color: var(--cor1);
+    border-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.439);
+}
+
+.titleh2{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: #fff;
+    background-color: var(--cor4);
+}
+
+.asidep1 {
+    margin: 30px auto;
+}
+
+.asidep2 {
+    padding-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor5);
+    color: #fff;
+}
+
+footer a {
+    color: lightblue;
+}
+
+footer {
+    text-align: center;
+}

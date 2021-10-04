@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightskyblue;
+}
+h1 {
+    width: max-content;
+    background-color: limegreen;
+    color: linen;
+}
+h2{
+    color:white;
+    background-color: blue;
+    width: max-content;
+}
+p {
+    text-align: justify;
+}
