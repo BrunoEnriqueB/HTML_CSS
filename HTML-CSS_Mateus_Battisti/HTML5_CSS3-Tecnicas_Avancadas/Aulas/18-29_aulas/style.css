@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/* animações */
+@keyframes animacao {
+    from {background-color: red;}
+    to {background-color: yellow;}
+
+}
+
+@keyframes animacao2 {
+    0% {animation-delay: 5s;}
+    30%{width: 100px;}
+    60%{background-color: red;}
+    80%{left: 100px; background-color: blue;}
+    100%{height: 100px;}
+}
+
+@keyframes animacao3 {
+    from {left: 0;}
+    to{left: 100px; background-color: green;}
+}
+
+@keyframes animacao4 {
+    from {left: 0;}
+    to{left: 500px;}
+}
+
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animacao;
+    animation-duration: 2.5s;
+}
+
+@keyframes animacao5 {
+    0% {left: 0px;}
+    25% {left: 20px; background-color: blue;}
+    60% {left: 100px;}
+    80% {left: 50px; background-color: red;}
+    100%{left: 0px; background-color: darkblue;}
+}
+
+/* fim animações */
+
+* {
+    margin: 10px;
+}
+
+/* divs animadas */
+
+.animation-div2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao2;
+    animation-duration: 6s;
+}
+
+.animation-div3 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    animation-name: animacao3;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#animation-div4 {
+    animation-timing-function: linear;
+}
+
+#animation-div5 {
+    animation-timing-function: ease;
+}
+
+#animation-div6 {
+    animation-timing-function: ease-in;
+}
+
+#animation-div7 {
+    animation-timing-function: ease-out;
+}
+
+#animation-div8 {
+    animation-timing-function: ease-in-out;
+}
+
+.animation-div9 {
+    position: relative;
+    background-color: darkblue;
+    width: 50px;
+    height: 50px;
+    animation: animacao5 8s ease-out 2s infinite;
+}
+
+/* fim div's aniumadas */
+
+
+.box {
+    background-color:orange;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* botao e div transition */
+.btn {
+    display:block;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.transition {
+    width: 50px;
+    height: 100px;
+    background-color: red;
+    transition: 2s;
+}
+
+.transition:hover {
+    width: 300px;
+}
+/* 
+fim botao e div transition */
+
+/* calc */
+
+.div-calc {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    background-color: #ddd;
+    border: 1px solid red;
+}
+
+.innerdiv-calc {
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    background-color: red;
+}
+
+.calc1 {
+    width: calc(50% + 50vw);
+}
+
+.calc2 {
+    width: calc(50% - 50px);
+}
+
+.calc3 {
+    width: calc(50% * 2);
+}
+
+.calc4 {
+    width: calc(100% / 4);
+}
+
+/* fim calc */
+
+/* gradient */
+
+.gradient-box {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20px;
+}
+
+.gradient1 {
+    background-image: linear-gradient(purple, black);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to top, purple, black);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to right, yellow, orange);
+}
+
+.gradient4 {
+    background-image: linear-gradient(to left, yellow, orange);
+}
+
+.gradient5 {
+    background-image: linear-gradient(to top right, lightblue,  darkblue);
+}
+
+.gradient6 {
+    background-image: linear-gradient(red, green, blue);
+}
+
+.gradient7 {
+    background-image: radial-gradient(#3A3042, #DB9D47, #FF784F);
+}
+
+.gradient8 {
+    background-image: radial-gradient(#3A3042 10%, #DB9D47 30%, #FF784F 60%);
+}
+
+.gradient9 {
+    background-image: radial-gradient(circle, #3A3042 10%, #DB9D47 30%, #FF784F 60%);
+}
+
+/* fim gradiente */
+
+/* font face */
+@font-face {
+    font-family: "Lage Grafica";
+    src: url(fonts/lage_grafica.ttf);
+}
+
+.fontface {
+    font-family: "Lage Grafica";
+}
+
+/* fim font face */
+
+/* media queries */
+
+.mediaquery {
+    height: 200px;
+    width: 1200px;
+    background-color: red;
+}
+
+/* desktop */
+@media (max-width: 1000px) {
+    .mediaquery {
+        width: 500px;
+        background-color: blue;
+    }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .mediaquery {
+        width: 300px;
+        background-color: green;
+    }
+}
+
+/* celular */
+@media (max-width: 512px) {
+    .mediaquery {
+        width: 200px;
+        background-color: pink;
+    }
+}
+
+/* fim media query */
+
+/* border radius */
+
+.div-border {
+    width: 100px;
+    height: 100px;
+    background-color:purple;
+    margin: 20;
+}
+
+.border-radius1 {
+    border-radius: 50%;
+}
+
+.border-radius2 {
+    border-radius: 0px 25px;
+}
+
+/* fim border radius */
