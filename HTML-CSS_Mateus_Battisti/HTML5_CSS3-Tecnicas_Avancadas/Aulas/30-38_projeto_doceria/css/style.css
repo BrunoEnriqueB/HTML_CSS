@@ -1,3 +1,67 @@
 html {
     font-family: "Open sans", sans-serif;
 }
+
+* {
+    transition: .5s;
+    font-size: 10px;
+}
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: #006599;
+    padding-top: 40px;
+}
+
+.sidebar h1 {
+    color: #FFF;
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 20px 0px;
+
+}
+
+.sidebar a {
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.sidebar a:hover {
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.sidebar li {
+    padding: 15px 20px;
+}
+
+.sidebar-container {
+    position: relative;
+    margin: 0px auto;
+    width: 200px;
+}
+
+.logo-doceria {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+/* content */
+
+.content {
+    left: 300px;
+    position: relative;
+}
+
+.content h2 {
+    font-size: 4.0rem;
+}
+
+.banner-doceria {
+    width: 100px;
+}
