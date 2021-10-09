@@ -10,29 +10,91 @@
     <title>Doceria Single Page</title>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <div class="sidebar">
-                <div class="sidebar-container">
-                    <img class="logo-doceria" src="img/stand.png" alt="Logo doceria">
-                    <h1>Doceria</h1>
-                    <nav>
-                        <ul>
-                            <li><a href="sessao_bemvindo">Bem vindo</a></li>
-                            <li><a href="sessao_sobre">Sobre nós</a></li>
-                            <li><a href="sessao_doces1">Doces 1</a></li>
-                            <li><a href="sessao_doces2">Doces 2</a></li>
-                            <li><a href="sessao_doces3">Doces 3</a></li>
-                            <li><a href="sessa0_contato">Entre em contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="content">
-                <img src="img/banner.jpg" alt="banner doceria" class="banner-doceria">
-                <h2>teste</h2>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <img class="logo-doceria" src="img/stand.png" alt="Logo doceria">
+                <h1>Doceria</h1>
+                <nav>
+                    <ul>
+                        <li><a href="sessao_bemvindo">Bem vindo</a></li>
+                        <li><a href="sessao_sobre">Sobre nós</a></li>
+                        <li><a href="sessao_doces1">Doces 1</a></li>
+                        <li><a href="sessao_doces2">Doces 2</a></li>
+                        <li><a href="sessao_doces3">Doces 3</a></li>
+                        <li><a href="sessa0_contato">Entre em contato</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </main>
+        <div class="content">
+            <main>
+                <section id="sessao-bemvindo">
+                    <div class="banner"></div>
+                    <div class="sessao-bemvindo-content">
+                        <h1>Seja bem vindo a doceria</h1>
+                        <div class="sessao-minibanner"></div>
+                        <div class="sessao-descricao">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum omnis veritatis, odit repellat, nostrum modi amet dolor minima error eligendi explicabo quaerat et, neque quod voluptates qui. Consequuntur, distinctio!
+                            </p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab suscipit quam accusantium enim eligendi repudiandae dolorum dolore consequatur laboriosam necessitatibus adipisci quos, perferendis vero minus, repellat earum quod repellendus.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cupiditate explicabo voluptate provident dolores eveniet, vero nisi nostrum ipsum perspiciatis est ad laboriosam nobis et earum eligendi aliquid! Ad, repudiandae.
+                            </p>
+                            <a href="#" class="sessao-bemvindo-btn">Leia mais</a>
+                    </div>
+                </section>
+                    <section id="sessao-sobre">
+                        <h2>Sobre nós</h2>
+                        <div class="sessao-minibanner"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus earum omnis veritatis, odit repellat, nostrum modi amet dolor minima error eligendi explicabo quaerat et, neque quod voluptates qui. Consequuntur, distinctio!
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ab suscipit quam accusantium enim eligendi repudiandae dolorum dolore consequatur laboriosam necessitatibus adipisci quos, perferendis vero minus, repellat earum quod repellendus.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet cupiditate explicabo voluptate provident dolores eveniet, vero nisi nostrum ipsum perspiciatis est ad laboriosam nobis et earum eligendi aliquid! Ad, repudiandae.
+                        </p>
+                    </section>
+                    <section id="sessao-doces1">
+                        <h2>Doces 1</h2>
+                        <div class="doces1-imgs banner-galeria" id="img1"></div>
+                        <div class="doces1-imgs banner-galeria" id="img2"></div>
+                        <div class="doces1-imgs banner-galeria" id="img3"></div>
+                        <div class="doces1-imgs banner-galeria" id="img4"></div>
+                        <div class="doces1-imgs banner-galeria" id="img5"></div>
+                    </section>
+                    <section id="sessao-doces2">
+                        <h2>Doces 2</h2>
+                        <div class="doces2-imgs banner-galeria" id="img6"></div>
+                        <div class="doces2-imgs banner-galeria" id="img7"></div>
+                        <div class="doces2-imgs banner-galeria" id="img8"></div>
+                    </section>
+                    <section id="sessao-doces3">
+                        <h2>Doces 3</h2>
+                        <div class="doces3-imgs banner-galeria" id="img9"></div>
+                        <div class="doces3-imgs banner-galeria" id="img10"></div>
+                        <div class="doces3-imgs banner-galeria" id="img11"></div>
+                        <div class="doces3-imgs banner-galeria" id="img12"></div>
+                    </section>
+                    <section id="sessao-contrato">
+                        <h2>Entre em conta</h2>
+                        <form id="form-contato">
+                            <input type="text" name="name" id="nome" placeholder="Digite seu nome">
+                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva sua Mensagem"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </section>
+                    <footer>
+                        <p>Btuno @2021</p>
+                    </footer>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
