@@ -1,0 +1,39 @@
+html {
+    background-color: #DDD;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+    background-color: #fff;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /* flex: 1 1 300px; */
+    text-align: center;
+    color: #fff;
+    
+}
+
+.first {
+    background-color: red;
+    /* order: 1; */
+
+}
+
+.second {
+    background-color: green;
+    /* order: 2; */
+}
+
+.third {
+    background-color: blue;
+    /* order: 0; */
+
+}
