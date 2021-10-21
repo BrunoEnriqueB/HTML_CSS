@@ -14,7 +14,7 @@
     <div class="container">
         <aside class="sidebar">
             <div class="toolbar-container">
-                <img src="img/avatar1.png" alt="avatar" class="user-photo">
+                <img src="img/bruno-avatar.jpg" alt="avatar" class="user-photo">
                 <div class="auxicons-toolbar-container">
                     <i class="fas fa-spinner"></i>
                     <i class="fas fa-comment-alt"></i>
@@ -24,10 +24,7 @@
             <div class="notification-container">
                 <i class="fas fa-bell-slash"></i>
                 <p class="receive-notification">Receba notificações de novas mensagens</p>
-                <p class="activate-notification">
-                    Ativar notificações na área de trabalho
-                    <i class="fas fa-angle-right"></i>
-                </p>
+                <p class="activate-notification">Ativar notificações na área de trabalho<i class="fas fa-angle-right"></i></p>
             </div>
             <div class="search-container">
                 <i id="contact-search" class="fas fa-search"></i>
@@ -38,7 +35,7 @@
                     <img src="img/jp-avatar.jpg" alt="foto joão png" class="user-photo">
                     <div class="user-info">
                         <p class="user-name">Xarope Sassi</p>
-                        <p class="user-messagepreview"><i class="fas fa-check-double"></i>Amigor</p>
+                        <p class="user-messagepreview"><i class="fas fa-check-double"></i>Oi</p>
                     </div>
                       <div class="message-info">
                           <p class="nessage-time">22:40</p>
@@ -69,7 +66,29 @@
             </div>
         </aside>
         <main class="chat-container">
-
+            <nav class="chat-navbar">
+                <div class="contactinfo-container">
+                    <img src="img/jp-avatar.jpg" alt="" class="user-photo">
+                    <p class="user-name">Xarope Sassi</p>
+                </div>
+                <ul class="chattools-container">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-paperclip"></i></li>
+                    <li><i class="fas fa-ellipsis-v"></i></li>
+                </ul>
+            </nav>
+            <div class="messages-container">
+                <div class="bg-image"></div>
+                <div class="chat-messages">
+                    <p class="guest-message">Amigor</p>
+                    <p class="user-message">Oi</p>
+                </div>
+            </div>
+            <div class="sendmessage-container">
+                <i class="far fa-grin"></i>
+                <input type="text" name="message" id="chatmessage" class="userinput" placeholder="Digite uma mensagem">
+                <i class="fas fa-microphone"></i>
+            </div>
         </main>
     </div>
 </body>
