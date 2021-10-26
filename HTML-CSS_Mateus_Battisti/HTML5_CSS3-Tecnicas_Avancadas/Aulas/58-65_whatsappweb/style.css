@@ -220,3 +220,160 @@ ul {
     font-weight: bold;
     float: right;
 }
+
+/* Chat */
+
+.chat-container {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-color: #CCC;
+}
+
+/* chat navbar */
+
+.chat-navbar {
+    height: 60px;
+    background-color: #EEE;
+    border-left: 1px solid #DDD;
+    padding-left: 75px;
+}
+
+.chat-navbar p {
+    margin: 0;
+}
+
+.contactinfo-container {
+    display: inline-block;
+}
+
+.contactinfo-container .user-name {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.chattools-container {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+.chattools-container li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 18px;
+    color: #80868A;
+    cursor: pointer;
+}
+
+/* messages */
+
+.messages-container {
+    background-color: #E1DAD2;
+    height: calc(100% - 120px);
+    position: relative;
+}
+
+.messages-container p {
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url('img/background_whats.png');
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    opacity: .1;
+}
+
+.chat-messages {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 80px;
+    box-sizing: border-box;
+}
+
+.chat-messages p {
+    display: block;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    width: 200px;
+}
+
+.guest-message {
+    background-color: #FFF;
+}
+
+.guest-message:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-right: 17px solid #FFF;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    float: right;
+}
+
+.user-message:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #DCF8C6;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+/* send message */
+
+.sendmessage-container {
+    background-color: #EFEFEF;
+    border-left: 1px solid #DDD;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+}
+
+#chatmessage {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    background-color: #FFF;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 1300px;
+}
+
+.sendmessage-container i {
+    font-size: 24px;
+    color: #80868A;
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+}
+
+.fas.fa-microphone {
+    float: right;
+}
